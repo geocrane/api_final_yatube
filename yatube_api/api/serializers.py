@@ -41,6 +41,11 @@ class FollowSerializer(serializers.ModelSerializer):
         default=serializers.CurrentUserDefault(),
     )
 
+    def validate_following(self, value):
+        if self.context['request'].user == value:
+            raise serializers.ValidationError("Подписка на себя")
+        return value
+
     class Meta:
         model = Follow
         fields = ("user", "following")

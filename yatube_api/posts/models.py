@@ -32,6 +32,9 @@ class Post(models.Model):
         null=True,
     )
 
+    class Meta:
+        ordering = ("pub_date",)
+
     def __str__(self):
         return self.text[:CUT_POST_LENGTH]
 
@@ -47,6 +50,9 @@ class Comment(models.Model):
     created = models.DateTimeField(
         "Дата добавления", auto_now_add=True, db_index=True
     )
+
+    class Meta:
+        ordering = ("created",)
 
 
 class Follow(models.Model):
