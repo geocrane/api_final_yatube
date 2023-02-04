@@ -1,8 +1,12 @@
 <h2 align="center">API-интерфейс для проекта <a  href="https://solitairevue.firebaseapp.com">PhotoTube</a></h2>
 
 <p align="center">
-  
-<img src="https://img.shields.io/badge/developer-geocrane-green">
+
+<img src="https://img.shields.io/badge/made%20by-geocrane-green">
+<img src=https://img.shields.io/badge/Python-%203.7-blue>
+<img src=https://img.shields.io/badge/Django%20-%202.2.16-red>
+<img src=https://img.shields.io/badge/DRF-%203.2.14-yellow>
+---
 
 ### Как запустить проект:
 
