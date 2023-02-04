@@ -1,5 +1,8 @@
-<h2 align="center">API-интерфейс для проекта <a  href="<h2 align="center">API-интерфейс для проекта <a  href="https://solitairevue.firebaseapp.com">PhotoTube</a></h2>
-">PhotoTube</a></h2>
+<h2 align="center">API-интерфейс для проекта <a  href="https://solitairevue.firebaseapp.com">PhotoTube</a></h2>
+
+<p align="center">
+  
+<img src="https://img.shields.io/badge/developer-geocrane-green">
 
 ### Как запустить проект:
 
