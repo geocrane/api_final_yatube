@@ -6,15 +6,17 @@
 <img src=https://img.shields.io/badge/DRF-%203.2.14-yellow>
 </p>
 
-*В проекте реалиозован API интерфейс для приложения phototube (GitHub [https://github.com/geocrane/phototube](https://github.com/geocrane/phototube)). Поддерживаются операции CRUD для постов, жанров и комментариев. Аутентификация пользователей производится по токену.*
+> В проекте реалиозован API интерфейс для приложения phototube ([https://github.com/geocrane/phototube](https://github.com/geocrane/phototube)). Поддерживаются операции CRUD для постов, жанров и комментариев. Аутентификация пользователей производится по токену.
 
 
-## Запуск проекта:
+### Запуск проекта:
 > *Команды указаны на примере Linux.*
 > *В Windows и MacOs могут отличаться python/python3 и путь к виртуальному окружению.*
 
 Клонировать репозиторий: `git clone https://github.com/geocrane/api_phototube.git`
+
 Cоздать виртуальное окружение: `python3 -m venv venv`
+
 Активировать venv: `source venv/bin/activate`
 При необходимости, обновить pip: `python3 -m pip install --upgrade pip`
 Установить зависимости из requirements.txt: `pip install -r requirements.txt`
@@ -23,11 +25,11 @@ Cоздать виртуальное окружение: `python3 -m venv venv`
 Запустить проект на локальном сервере: `python3 manage.py runserver`
 
 
-## Эндпойнты:
+### Эндпойнты:
 Доступные эндпойнты и документация по адресу [http://127.0.0.1:8000/redoc/](http://127.0.0.1:8000/redoc/)
 
 
-## Пример авторизации по токену:
+### Пример авторизации по токену:
 
 Для получения токена, необходимо отправить POST-запрос на указанный эндпойнт.
 В теле запроса передать незанятый username и password пользователя
@@ -40,11 +42,27 @@ Content-Type: application/json
 }
 ```
 
-В ответе прийдет два токена:
-refresh: токен для обновления прав доступа.
-access: токен для авторизации.
+Пример ответа:
+*refresh: токен для обновления прав доступа.*
+*access: токен для авторизации.*
 
-Для CRUD операций с собственными постами в заголовке запроса необходимо передать токен "access":
+```
+HTTP/1.1 200 OK
+Date: Sun, 05 Feb 2023 09:13:07 GMT
+Server: WSGIServer/0.2 CPython/3.7.13
+Content-Type: application/json
+Vary: Accept
+Allow: POST, OPTIONS
+X-Frame-Options: SAMEORIGIN
+Content-Length: 438
+
+{
+  "refresh": "<your_refresh_token",
+  "access": "<your_access_token"
+}
+```
+
+Для CRUD операций с постами в заголовке запроса необходимо передать access-токен автора поста:
 ```
 POST http://127.0.0.1:8000/api/v1/posts/
 Content-Type: application/json
