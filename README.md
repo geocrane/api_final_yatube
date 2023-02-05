@@ -1,12 +1,4 @@
-<h1 align="center">API для <a  href="https://github.com/geocrane/phototube">PhotoTube</a></h1>
-
-<p align="center"><img src="https://img.shields.io/badge/made%20by-geocrane-green">
-<img src=https://img.shields.io/badge/Python-%203.7-blue>
-<img src=https://img.shields.io/badge/Django%20-%202.2.16-red>
-<img src=https://img.shields.io/badge/DRF-%203.2.14-yellow>
-</p>
-
-В данном проекте реалиозован API интерфейс для приложения phototube ([https://github.com/geocrane/phototube](https://github.com/geocrane/phototube)). Поддерживаются операции CRUD для постов, жанров и комментариев. Аутентификация пользователей производится по токену.
+API-интерфейс для проекта PhotoTube.
 
 ## Используется:
 - Python 3.7
@@ -68,3 +60,5 @@ Content-Type: application/json
 Content-Type: application/json
 Authorization: Bearer <you_access_token_here>
 ```
+
+Доступные эндпойнты и документация по ссылке http://127.0.0.1:8000/redoc
