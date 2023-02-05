@@ -68,3 +68,5 @@ Content-Type: application/json
 Content-Type: application/json
 Authorization: Bearer <you_access_token_here>
 ```
+
+##### developed by Sergey S. Zhuravlev
