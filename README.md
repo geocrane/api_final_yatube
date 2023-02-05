@@ -6,7 +6,9 @@
 <img src=https://img.shields.io/badge/DRF-%203.2.14-yellow>
 </p>
 
-В данном проекте реалиозован API интерфейс для приложения phototube ([https://github.com/geocrane/phototube](https://github.com/geocrane/phototube)). Поддерживаются операции CRUD для постов, жанров и комментариев. Аутентификация пользователей производится по токену.
+Реалиозация API интерфейс для приложения phototube ([https://github.com/geocrane/phototube](https://github.com/geocrane/phototube)).  
+Поддерживаются операции CRUD для постов, жанров и комментариев.  
+Аутентификация пользователей производится по токену.
 
 ## Используется:
 - Python 3.7
@@ -69,4 +71,4 @@ Content-Type: application/json
 Authorization: Bearer <you_access_token_here>
 ```
 
-<h3 align="right">developed by: Sergey S. Zhuravlev</h5>
+<h3 align="center">developed by: Sergey S. Zhuravlev</h5>
