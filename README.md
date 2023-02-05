@@ -63,25 +63,10 @@ Content-Type: application/json
 }
 ```
 
-Пример ответа:
-*refresh: токен для обновления прав доступа.*
-*access: токен для авторизации.*
+В ответе прийдут:
+> refresh: токен для обновления прав доступа.
+> access: токен для авторизации.
 
-```
-HTTP/1.1 200 OK
-Date: Sun, 05 Feb 2023 09:13:07 GMT
-Server: WSGIServer/0.2 CPython/3.7.13
-Content-Type: application/json
-Vary: Accept
-Allow: POST, OPTIONS
-X-Frame-Options: SAMEORIGIN
-Content-Length: 438
-
-{
-  "refresh": "<your_refresh_token",
-  "access": "<your_access_token"
-}
-```
 
 Для CRUD операций с постами в заголовке запроса необходимо передать access-токен автора поста:
 ```
