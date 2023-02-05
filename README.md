@@ -8,6 +8,13 @@
 
 В данном проекте реалиозован API интерфейс для приложения phototube ([https://github.com/geocrane/phototube](https://github.com/geocrane/phototube)). Поддерживаются операции CRUD для постов, жанров и комментариев. Аутентификация пользователей производится по токену.
 
+## Используется:
+- Python 3.7
+- Django 2.2.16
+- Django REST Framework 3.12.4
+- SQLite 3
+- Djoser 2.1.0
+
 
 ## Запуск проекта (на примере Linux):
 Клонируйте репозиторий:
@@ -40,7 +47,7 @@ python3 manage.py runserver
 ## Авторизации по токену:
 
 Для получения токена, необходимо отправить POST-запрос на указанный эндпойнт.
-В теле запроса передать свободный username и password пользователя
+В теле запроса передать свободный username и password пользователя.
 ```
 POST http://127.0.0.1:8000/api/v1/jwt/create/
 Content-Type: application/json
@@ -58,11 +65,6 @@ Content-Type: application/json
 
 Для CRUD операций с постами в заголовке запроса необходимо передать access-токен автора поста:
 ```
-POST http://127.0.0.1:8000/api/v1/posts/
 Content-Type: application/json
 Authorization: Bearer <you_access_token_here>
-{
-    "text": "your text",
-    "group": <genre_id>
-}
 ```
