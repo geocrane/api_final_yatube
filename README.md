@@ -6,7 +6,7 @@
 <img src=https://img.shields.io/badge/DRF-%203.2.14-yellow>
 </p>
 
-> В проекте реалиозован API интерфейс для приложения phototube ([https://github.com/geocrane/phototube](https://github.com/geocrane/phototube)). Поддерживаются операции CRUD для постов, жанров и комментариев. Аутентификация пользователей производится по токену.
+В данном проекте реалиозован API интерфейс для приложения phototube ([https://github.com/geocrane/phototube](https://github.com/geocrane/phototube)). Поддерживаются операции CRUD для постов, жанров и комментариев. Аутентификация пользователей производится по токену.
 
 
 ### Запуск проекта:
