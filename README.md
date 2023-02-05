@@ -48,7 +48,7 @@ python3 manage.py runserver
 
 ## Авторизации по токену:
 
-Для получения токена, необходимо отправить POST-запрос на указанный эндпойнт.  
+Для получения токена, необходимо отправить POST-запрос на указанный эндпойнт.
 В теле запроса передать свободный username и password пользователя.
 ```
 POST http://127.0.0.1:8000/api/v1/jwt/create/
@@ -72,5 +72,3 @@ Authorization: Bearer <you_access_token_here>
 ```
 
 <h3 align="center">developed by: Sergey S. Zhuravlev</h5>
-
-Доступные эндпойнты и документация по ссылке http://127.0.0.1:8000/redoc
