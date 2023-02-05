@@ -6,7 +6,8 @@
 <img src=https://img.shields.io/badge/DRF-%203.2.14-yellow>
 </p>
 
------
+<h1 align="center"><a  href="https://solitairevue.firebaseapp.com"> </a></h1>
+
 Реализация API интерфейса для всех моделей приложения phototube.
 Операции CRUD для постов, жанров и комментариев.
 Аутентификация пользователей по токену.
