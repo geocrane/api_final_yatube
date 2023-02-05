@@ -6,6 +6,8 @@
 <img src=https://img.shields.io/badge/DRF-%203.2.14-yellow>
 </p>
 
+---
+
 
 ### Как запустить проект:
 
