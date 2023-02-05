@@ -1,15 +1,12 @@
 <h1 align="center">API для <a  href="https://github.com/geocrane/phototube">PhotoTube</a></h1>
 
-<p align="center" margin_bottom=0><img src="https://img.shields.io/badge/made%20by-geocrane-green">
+<p align="center"><img src="https://img.shields.io/badge/made%20by-geocrane-green">
 <img src=https://img.shields.io/badge/Python-%203.7-blue>
 <img src=https://img.shields.io/badge/Django%20-%202.2.16-red>
 <img src=https://img.shields.io/badge/DRF-%203.2.14-yellow>
 </p>
-<h1><a  href="#"></a></h1>
 
-Реализация API интерфейса для всех моделей приложения phototube.
-Операции CRUD для постов, жанров и комментариев.
-Аутентификация пользователей по токену.
+Реализация API интерфейса для всех моделей приложения phototube. Операции CRUD для постов, жанров и комментариев. Аутентификация пользователей по токену.
 
 ### Примеры запросов:
 Полный перечень запросов по адресу [http://127.0.0.1:8000/redoc/](http://127.0.0.1:8000/redoc/)
