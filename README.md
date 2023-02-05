@@ -1,4 +1,4 @@
-<h1 align="center">API для <a  href="https://solitairevue.firebaseapp.com">PhotoTube</a></h1>
+<h1 align="center">API для <a  href="https://github.com/geocrane/phototube">PhotoTube</a></h1>
 
 <p align="center"><img src="https://img.shields.io/badge/made%20by-geocrane-green">
 <img src=https://img.shields.io/badge/Python-%203.7-blue>
