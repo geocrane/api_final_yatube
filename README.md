@@ -10,7 +10,7 @@
 
 
 ## Запуск проекта (на примере Linux):
-Для запуска выполните последовательно следующие команды:
+Для запуска на локальном сервере выполните поочередно:
 ```
 git clone https://github.com/geocrane/api_phototube.git
 
@@ -28,44 +28,10 @@ python3 manage.py migrate
 
 python3 manage.py runserver
 ```
-
-Клонировать репозиторий:
-```
-git clone https://github.com/geocrane/api_phototube.git
-```
-Внутри проекта создать виртуальное окружение:
-```
-python3 -m venv venv
-```
-Активировать venv:
-```
-source venv/bin/activate
-```
-При необходимости обновить pip:
-```
-python3 -m pip install --upgrade pip
-```
-Установить зависимости из requirements.txt:
-```
-pip install -r requirements.txt
-```
-Перейти в каталог с файлом manage.py:
-```
-cd phototube_api
-```
-Выполнить миграции:
-```
-python3 manage.py migrate
-```
-Запустить проект на локальном сервере:
-```
-python3 manage.py runserver
-```
-
 
 ## Эндпойнты:
-Все доступные эндпойнты и документация по адресу (после запуска проекта) [http://127.0.0.1:8000/redoc/](http://127.0.0.1:8000/redoc/)
-
+После запуска сервера доступные эндпойнты и документация по адресу: 
+[http://127.0.0.1:8000/redoc/](http://127.0.0.1:8000/redoc/)
 
 
 ## Пример авторизации по токену:
