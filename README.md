@@ -13,10 +13,28 @@
 > *Команды указаны на примере Linux.*
 > *В Windows и MacOs могут отличаться python/python3 и путь к виртуальному окружению.*
 
+```
+# клонировать репозиторий:
+git clone https://github.com/geocrane/api_phototube.git
+# создать виртуальное окружение:
+python3 -m venv venv
+# Активировать venv:
+source venv/bin/activate
+# При необходимости, обновить pip:
+python3 -m pip install --upgrade pip
+# Установить зависимости из requirements.txt:
+pip install -r requirements.txt
+# Перейти в каталог с manage.py:
+cd phototube_api
+# Выполнить миграции:
+python3 manage.py migrate
+# Запустить проект на локальном сервере:
+python3 manage.py runserver
+```
+
+
 Клонировать репозиторий: `git clone https://github.com/geocrane/api_phototube.git`
-
 Cоздать виртуальное окружение: `python3 -m venv venv`
-
 Активировать venv: `source venv/bin/activate`
 При необходимости, обновить pip: `python3 -m pip install --upgrade pip`
 Установить зависимости из requirements.txt: `pip install -r requirements.txt`
