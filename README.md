@@ -11,46 +11,49 @@
 
 ### Запуск проекта:
 > *Команды указаны на примере Linux.*
-> *В Windows и MacOs могут отличаться python/python3 и путь к виртуальному окружению.*
 
+Клонировать репозиторий:
 ```
-# клонировать репозиторий:
 git clone https://github.com/geocrane/api_phototube.git
-# создать виртуальное окружение:
+```
+Внутри проекта создать виртуальное окружение:
+```
 python3 -m venv venv
-# Активировать venv:
+```
+Активировать venv:
+```
 source venv/bin/activate
-# При необходимости, обновить pip:
+```
+При необходимости обновить pip:
+```
 python3 -m pip install --upgrade pip
-# Установить зависимости из requirements.txt:
+```
+Установить зависимости из requirements.txt:
+```
 pip install -r requirements.txt
-# Перейти в каталог с manage.py:
+```
+Перейти в каталог с файлом manage.py:
+```
 cd phototube_api
-# Выполнить миграции:
+```
+Выполнить миграции:
+```
 python3 manage.py migrate
-# Запустить проект на локальном сервере:
+```
+Запустить проект на локальном сервере:
+```
 python3 manage.py runserver
 ```
 
 
-Клонировать репозиторий: `git clone https://github.com/geocrane/api_phototube.git`
-Cоздать виртуальное окружение: `python3 -m venv venv`
-Активировать venv: `source venv/bin/activate`
-При необходимости, обновить pip: `python3 -m pip install --upgrade pip`
-Установить зависимости из requirements.txt: `pip install -r requirements.txt`
-Перейти в каталог с manage.py: `cd phototube_api`
-Выполнить миграции: `python3 manage.py migrate`
-Запустить проект на локальном сервере: `python3 manage.py runserver`
-
-
 ### Эндпойнты:
-Доступные эндпойнты и документация по адресу [http://127.0.0.1:8000/redoc/](http://127.0.0.1:8000/redoc/)
+Доступные эндпойнты и документация по адресу (после запуска проекта) [http://127.0.0.1:8000/redoc/](http://127.0.0.1:8000/redoc/)
 
 
 ### Пример авторизации по токену:
 
 Для получения токена, необходимо отправить POST-запрос на указанный эндпойнт.
-В теле запроса передать незанятый username и password пользователя
+В теле запроса передать свободный username и password пользователя
 ```
 POST http://127.0.0.1:8000/api/v1/jwt/create/
 Content-Type: application/json
